@@ -1,0 +1,178 @@
+/* PAGE BACKGROUND */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    background-color:#5b0000;
+
+    /* scattered flowers */
+    background-image:
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png"),
+    url("images/flower.png");
+
+    background-repeat:no-repeat;
+
+    background-size:
+    120px,
+    90px,
+    110px,
+    140px,
+    80px,
+    100px,
+    130px,
+    95px,
+    115px,
+    85px,
+    105px,
+    125px,
+    100px,
+    120px,
+    90px,
+    110px;
+
+    background-position:
+    5% 10%,
+    95% 15%,
+    10% 40%,
+    90% 35%,
+    15% 70%,
+    85% 65%,
+    8% 85%,
+    92% 80%,
+    20% 55%,
+    80% 50%,
+    30% 20%,
+    70% 75%,
+    12% 25%,
+    88% 28%,
+    25% 85%,
+    75% 88%;
+}
+
+/* MAIN INVITE CONTAINER */
+
+.container{
+    width:100%;
+    max-width:760px;
+    background:white;
+    position:relative;
+    z-index:1;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    margin:0 auto;
+    text-align:center;
+}
+
+/* INVITATION IMAGE */
+
+.invite{
+    width:100%;
+    display:block;
+    margin:0 auto;
+}
+
+/* FORM AREA */
+
+.form-box{
+    padding:40px 35px;
+    text-align:center;
+    background:white;
+    margin-top:0;
+}
+
+.form-box h2{
+    font-size:22px;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.reservation-text{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+/* RESERVATION LINK BUTTON */
+
+.reserve-link{
+    display:inline-block;
+    background:#8b0000;
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:4px;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+.reserve-link:hover{
+    background:#a30000;
+}
+
+.payment-help{
+    font-size:14px;
+    margin-top:20px;
+    line-height:1.5;
+    color:#444;
+    max-width:520px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:700px){
+
+    .container{
+        max-width:95%;
+    }
+
+    .form-box{
+        padding:30px 20px;
+    }
+
+    .reservation-text{
+        font-size:16px;
+    }
+
+    .reserve-link{
+        font-size:16px;
+        padding:12px 22px;
+    }
+
+    body{
+        background-size:
+        80px,
+        70px,
+        75px,
+        90px,
+        60px,
+        70px,
+        80px,
+        65px,
+        75px,
+        60px,
+        70px,
+        85px,
+        75px,
+        80px,
+        70px,
+        75px;
+    }
+}
