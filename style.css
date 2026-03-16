@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #7a0000;
+  background-color: #990000;
 }
 
 /* MAIN CONTAINER */
@@ -79,11 +79,6 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.92);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
   z-index: 2;
-  transition: transform 0.3s ease;
-}
-
-.story-photo:hover {
-  z-index: 3;
 }
 
 /* TOP ROW */
@@ -110,6 +105,11 @@ body {
   right: -165px;
   top: 510px;
   transform: rotate(-3deg);
+}
+
+/* MOBILE ROSES HIDDEN BY DEFAULT */
+.mobile-rose-area {
+  display: none;
 }
 
 /* ---------- TABLET ---------- */
@@ -230,6 +230,72 @@ body {
     font-size: 11px !important;
     line-height: 1.45;
   }
+
+  .mobile-rose-area {
+    display: block;
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+    background: transparent;
+    margin-top: 0;
+  }
+
+  .fallen-rose {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    opacity: 0.95;
+    pointer-events: none;
+  }
+
+  .rose1 {
+    left: 8px;
+    top: 10px;
+    transform: rotate(-18deg);
+  }
+
+  .rose2 {
+    left: 52px;
+    top: 45px;
+    transform: rotate(20deg);
+  }
+
+  .rose3 {
+    left: 118px;
+    top: 105px;
+    transform: rotate(-28deg);
+  }
+
+  .rose4 {
+    left: 170px;
+    top: 55px;
+    transform: rotate(12deg);
+  }
+
+  .rose5 {
+    right: 10px;
+    top: 14px;
+    transform: rotate(18deg);
+  }
+
+  .rose6 {
+    right: 58px;
+    top: 60px;
+    transform: rotate(-16deg);
+  }
+
+  .rose7 {
+    right: 122px;
+    top: 112px;
+    transform: rotate(26deg);
+  }
+
+  .rose8 {
+    right: 178px;
+    top: 72px;
+    transform: rotate(-10deg);
+  }
 }
 
 /* ---------- VERY SMALL MOBILE ---------- */
@@ -251,12 +317,12 @@ body {
 
   .bottom-left {
     left: 6px;
-    top: 285px;
+    top: 305px;
   }
 
   .bottom-right {
     right: 6px;
-    top: 315px;
+    top: 335px;
   }
 
   .form-box {
@@ -276,5 +342,54 @@ body {
     max-width: 90%;
     font-size: 13px;
     padding: 11px 16px;
+  }
+
+  .mobile-rose-area {
+    height: 150px;
+  }
+
+  .fallen-rose {
+    width: 34px;
+    height: 34px;
+  }
+
+  .rose1 {
+    left: 6px;
+    top: 10px;
+  }
+
+  .rose2 {
+    left: 40px;
+    top: 40px;
+  }
+
+  .rose3 {
+    left: 92px;
+    top: 96px;
+  }
+
+  .rose4 {
+    left: 140px;
+    top: 52px;
+  }
+
+  .rose5 {
+    right: 8px;
+    top: 12px;
+  }
+
+  .rose6 {
+    right: 44px;
+    top: 48px;
+  }
+
+  .rose7 {
+    right: 94px;
+    top: 100px;
+  }
+
+  .rose8 {
+    right: 140px;
+    top: 64px;
   }
 }
