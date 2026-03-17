@@ -79,7 +79,7 @@ body {
 }
 
 /* ========================= */
-/* STORY PHOTOS (UPDATED) */
+/* STORY PHOTOS */
 /* ========================= */
 
 .story-photo {
@@ -210,15 +210,16 @@ body {
     transform: rotate(3deg);
   }
 
+  /* moved higher so they don't overlap the text */
   .bottom-left {
     left: 8px;
-    top: 320px;
+    top: 245px;
     transform: rotate(2deg);
   }
 
   .bottom-right {
     right: 8px;
-    top: 350px;
+    top: 245px;
     transform: rotate(-2deg);
   }
 
@@ -268,14 +269,15 @@ body {
     top: 88px;
   }
 
+  /* moved higher so they don't cover wording */
   .bottom-left {
     left: 6px;
-    top: 305px;
+    top: 235px;
   }
 
   .bottom-right {
     right: 6px;
-    top: 335px;
+    top: 235px;
   }
 
   .form-box {
