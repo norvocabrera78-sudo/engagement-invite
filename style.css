@@ -210,16 +210,16 @@ body {
     transform: rotate(3deg);
   }
 
-  /* moved higher so they don't overlap the text */
+  /* moved way up to sit against bottom corners of invitation */
   .bottom-left {
     left: 8px;
-    top: 245px;
+    top: 170px;
     transform: rotate(2deg);
   }
 
   .bottom-right {
     right: 8px;
-    top: 245px;
+    top: 170px;
     transform: rotate(-2deg);
   }
 
@@ -269,15 +269,15 @@ body {
     top: 88px;
   }
 
-  /* moved higher so they don't cover wording */
+  /* moved way up to hug invitation border */
   .bottom-left {
     left: 6px;
-    top: 235px;
+    top: 155px;
   }
 
   .bottom-right {
     right: 6px;
-    top: 235px;
+    top: 155px;
   }
 
   .form-box {
