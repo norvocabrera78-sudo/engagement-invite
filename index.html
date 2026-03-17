@@ -1,294 +1,64 @@
-/* PAGE BASE */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #990000;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engagement Celebration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* MAIN CONTAINER */
-.container {
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto;
-}
+  <div class="container">
 
-/* INVITATION IMAGE */
-.invite {
-  width: 100%;
-  display: block;
-}
+    <img src="images/invitation.png" class="invite" alt="Engagement Invitation">
 
-/* RSVP / PAYMENT SECTION */
-.form-box {
-  background: #e9e9e9;
-  padding: 30px 25px 60px;
-  text-align: center;
+    <img src="images/phototopleft.JPG" class="story-photo top-left" alt="Proposal moment">
+    <img src="images/phototopright.JPG" class="story-photo top-right" alt="She said yes">
 
-  /* ROSES AT BOTTOM */
-  background-image: url("images/flower.png");
-  background-repeat: repeat-x;
-  background-position: bottom center;
-  background-size: 80px;
-}
+    <img src="images/bottomleft.JPG" class="story-photo bottom-left" alt="Celebration hug">
+    <img src="images/bottomright.JPG" class="story-photo bottom-right" alt="First kiss">
 
-.form-box h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 24px;
-}
+    <div class="form-box">
+      <h2>Confirm Your Invitation</h2>
 
-.form-box p {
-  margin: 14px 0;
-  line-height: 1.5;
-  font-size: 16px;
-}
+      <p>
+        Reservation fee is <strong>$35 per guest.</strong>
+      </p>
 
-/* DEADLINE TEXT */
-.deadline {
-  font-weight: 700;
-}
+      <p class="deadline">
+        Please confirm your reservation and payment by July 2, 2026.
+      </p>
 
-/* BUTTON */
-.reserve-link {
-  display: inline-block;
-  margin-top: 18px;
-  background: #b30000;
-  color: #ffffff;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-}
+      <p>
+        Click below to reserve and choose your payment method.
+      </p>
 
-.reserve-link:hover {
-  opacity: 0.92;
-}
+      <a
+        href="https://forms.gle/3qW1BZGqKpb7iobSA"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="reserve-link"
+      >
+        Confirm Reservation & Payment
+      </a>
 
-/* SMALL TEXT */
-.payment-help {
-  font-size: 12px !important;
-  margin-top: 22px !important;
-  color: #555;
-  max-width: 560px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
+      <p class="payment-help">
+        Please include your full name and guest count in the payment note so your reservation can be matched correctly.
+      </p>
+    </div>
 
-/* ========================= */
-/* STORY PHOTOS (UPDATED) */
-/* ========================= */
+    <div class="mobile-rose-area">
+      <img src="images/flower.png" class="fallen-rose rose1" alt="">
+      <img src="images/flower.png" class="fallen-rose rose2" alt="">
+      <img src="images/flower.png" class="fallen-rose rose3" alt="">
+      <img src="images/flower.png" class="fallen-rose rose4" alt="">
+      <img src="images/flower.png" class="fallen-rose rose5" alt="">
+      <img src="images/flower.png" class="fallen-rose rose6" alt="">
+      <img src="images/flower.png" class="fallen-rose rose7" alt="">
+      <img src="images/flower.png" class="fallen-rose rose8" alt="">
+    </div>
 
-.story-photo {
-  position: absolute;
-  width: 190px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 3px solid rgba(255, 255, 255, 0.92);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-  z-index: 2;
-}
+  </div>
 
-/* TOP ROW */
-.top-left {
-  left: -210px;
-  top: 70px;
-  transform: rotate(-4deg);
-}
-
-.top-right {
-  right: -210px;
-  top: 110px;
-  transform: rotate(4deg);
-}
-
-/* BOTTOM ROW */
-.bottom-left {
-  left: -185px;
-  top: 470px;
-  transform: rotate(3deg);
-}
-
-.bottom-right {
-  right: -185px;
-  top: 510px;
-  transform: rotate(-3deg);
-}
-
-/* ========================= */
-/* TABLET */
-/* ========================= */
-
-@media (max-width: 1300px) {
-  .story-photo {
-    width: 155px;
-    height: 205px;
-  }
-
-  .top-left {
-    left: -160px;
-    top: 90px;
-  }
-
-  .top-right {
-    right: -160px;
-    top: 120px;
-  }
-
-  .bottom-left {
-    left: -140px;
-    top: 460px;
-  }
-
-  .bottom-right {
-    right: -140px;
-    top: 490px;
-  }
-}
-
-/* ========================= */
-/* SMALL TABLET */
-/* ========================= */
-
-@media (max-width: 1100px) {
-  .story-photo {
-    width: 135px;
-    height: 180px;
-    border-width: 2px;
-  }
-
-  .top-left {
-    left: 10px;
-    top: 95px;
-  }
-
-  .top-right {
-    right: 10px;
-    top: 115px;
-  }
-
-  .bottom-left {
-    left: 20px;
-    top: 420px;
-  }
-
-  .bottom-right {
-    right: 20px;
-    top: 455px;
-  }
-}
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-
-  .story-photo {
-    width: 100px;
-    height: 135px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
-  }
-
-  .top-left {
-    left: 6px;
-    top: 78px;
-    transform: rotate(-3deg);
-  }
-
-  .top-right {
-    right: 6px;
-    top: 98px;
-    transform: rotate(3deg);
-  }
-
-  .bottom-left {
-    left: 8px;
-    top: 320px;
-    transform: rotate(2deg);
-  }
-
-  .bottom-right {
-    right: 8px;
-    top: 350px;
-    transform: rotate(-2deg);
-  }
-
-  .form-box {
-    padding: 24px 18px 60px;
-  }
-
-  .form-box h2 {
-    font-size: 18px;
-    margin-bottom: 14px;
-  }
-
-  .form-box p {
-    font-size: 14px;
-    margin: 12px 0;
-  }
-
-  .reserve-link {
-    font-size: 14px;
-    padding: 12px 20px;
-    margin-top: 14px;
-  }
-
-  .payment-help {
-    font-size: 11px !important;
-    line-height: 1.45;
-  }
-}
-
-/* ========================= */
-/* VERY SMALL MOBILE */
-/* ========================= */
-
-@media (max-width: 480px) {
-  .story-photo {
-    width: 88px;
-    height: 120px;
-  }
-
-  .top-left {
-    left: 4px;
-    top: 72px;
-  }
-
-  .top-right {
-    right: 4px;
-    top: 88px;
-  }
-
-  .bottom-left {
-    left: 6px;
-    top: 305px;
-  }
-
-  .bottom-right {
-    right: 6px;
-    top: 335px;
-  }
-
-  .form-box {
-    padding: 22px 14px 55px;
-  }
-
-  .form-box h2 {
-    font-size: 17px;
-  }
-
-  .form-box p {
-    font-size: 13px;
-  }
-
-  .reserve-link {
-    font-size: 13px;
-    padding: 11px 16px;
-  }
-}
+</body>
+</html>
